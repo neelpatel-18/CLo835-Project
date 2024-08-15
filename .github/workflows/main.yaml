@@ -34,5 +34,5 @@ jobs:
         docker push $ECR_REGISTRY/my_app:flaskapp-$IMAGE_TAG
         
         # Build and push for my_sql
-        docker build -t $ECR_REGISTRY/my_sql:mysql-$IMAGE_TAG -f Dockerfile_mysql .
-        docker push $ECR_REGISTRY/my_sql:mysql-$IMAGE_TAG
+        docker build -t $ECR_REGISTRY/my_db:mysql-$IMAGE_TAG -f Dockerfile_mysql .
+        docker push $ECR_REGISTRY/my_db:mysql-$IMAGE_TAG
